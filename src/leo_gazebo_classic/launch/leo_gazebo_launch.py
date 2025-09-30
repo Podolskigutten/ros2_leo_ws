@@ -28,7 +28,8 @@ def generate_launch_description():
     # Include Gazebo launch
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([os.path.join(
-            get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')])
+            get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')]),
+        launch_arguments={'world': '/usr/share/gazebo-11/worlds/willowgarage.world'}.items()
     )
     
     return LaunchDescription([

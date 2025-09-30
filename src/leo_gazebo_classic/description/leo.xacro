@@ -250,6 +250,7 @@
                     <remapping>~/out:=velodyne_points</remapping>
                 </ros>
                 <output_type>sensor_msgs/PointCloud2</output_type>
+                <frame_name>velodyne</frame_name>
             </plugin>
         </sensor>
     </gazebo>
