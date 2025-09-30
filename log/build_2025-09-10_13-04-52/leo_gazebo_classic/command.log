@@ -1,0 +1,4 @@
+Invoking command in '/home/lukas/ros2_ws/build/leo_gazebo_classic': CMAKE_PREFIX_PATH=/opt/ros/foxy: /usr/bin/cmake --build /home/lukas/ros2_ws/build/leo_gazebo_classic -- -j12 -l12
+Invoked command in '/home/lukas/ros2_ws/build/leo_gazebo_classic' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy: /usr/bin/cmake --build /home/lukas/ros2_ws/build/leo_gazebo_classic -- -j12 -l12
+Invoking command in '/home/lukas/ros2_ws/build/leo_gazebo_classic': CMAKE_PREFIX_PATH=/opt/ros/foxy: /usr/bin/cmake --install /home/lukas/ros2_ws/build/leo_gazebo_classic
+Invoked command in '/home/lukas/ros2_ws/build/leo_gazebo_classic' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy: /usr/bin/cmake --install /home/lukas/ros2_ws/build/leo_gazebo_classic

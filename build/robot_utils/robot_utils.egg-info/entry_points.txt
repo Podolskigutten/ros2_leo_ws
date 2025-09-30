@@ -1,0 +1,3 @@
+[console_scripts]
+odom_monitor = robot_utils.odom_monitor:main
+

@@ -1,0 +1,26 @@
+[0.015s] Invoking command in '/home/lukas/ros2_ws/build/teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/lukas/ros2_ws/build/teleop -- -j12 -l12
+[0.045s] [35m[1mScanning dependencies of target teleop[0m
+[0.065s] [ 50%] [32mBuilding CXX object CMakeFiles/teleop.dir/src/teleop.cpp.o[0m
+[2.222s] [100%] [32m[1mLinking CXX executable teleop[0m
+[2.325s] [100%] Built target teleop
+[2.333s] Invoked command in '/home/lukas/ros2_ws/build/teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/lukas/ros2_ws/build/teleop -- -j12 -l12
+[2.335s] Invoking command in '/home/lukas/ros2_ws/build/teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/lukas/ros2_ws/build/teleop
+[2.341s] -- Install configuration: ""
+[2.341s] -- Execute custom install script
+[2.341s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/teleop/lib/teleop/teleop
+[2.342s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/teleop/share/ament_index/resource_index/package_run_dependencies/teleop
+[2.342s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/teleop/share/ament_index/resource_index/parent_prefix_path/teleop
+[2.342s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/teleop/share/teleop/environment/ament_prefix_path.sh
+[2.342s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/teleop/share/teleop/environment/ament_prefix_path.dsv
+[2.343s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/teleop/share/teleop/environment/path.sh
+[2.343s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/teleop/share/teleop/environment/path.dsv
+[2.343s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/teleop/share/teleop/local_setup.bash
+[2.343s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/teleop/share/teleop/local_setup.sh
+[2.343s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/teleop/share/teleop/local_setup.zsh
+[2.343s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/teleop/share/teleop/local_setup.dsv
+[2.344s] -- Symlinking: /home/lukas/ros2_ws/install/teleop/share/teleop/package.dsv
+[2.350s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/teleop/share/ament_index/resource_index/packages/teleop
+[2.350s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/teleop/share/teleop/cmake/teleopConfig.cmake
+[2.350s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/teleop/share/teleop/cmake/teleopConfig-version.cmake
+[2.350s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/teleop/share/teleop/package.xml
+[2.352s] Invoked command in '/home/lukas/ros2_ws/build/teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/lukas/ros2_ws/build/teleop

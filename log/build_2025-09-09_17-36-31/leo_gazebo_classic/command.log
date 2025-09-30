@@ -1,0 +1,2 @@
+Invoking command in '/home/lukas/ros2_ws/build/leo_gazebo_classic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/lukas/ros2_ws/src/leo_gazebo_classic -DCMAKE_INSTALL_PREFIX=/home/lukas/ros2_ws/install/leo_gazebo_classic
+Invoked command in '/home/lukas/ros2_ws/build/leo_gazebo_classic' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/lukas/ros2_ws/src/leo_gazebo_classic -DCMAKE_INSTALL_PREFIX=/home/lukas/ros2_ws/install/leo_gazebo_classic

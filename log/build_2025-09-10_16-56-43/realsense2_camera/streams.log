@@ -1,0 +1,79 @@
+[0.011s] Invoking command in '/home/lukas/ros2_ws/build/realsense2_camera': CMAKE_PREFIX_PATH=/home/lukas/ros2_ws/install/realsense2_camera_msgs:/home/lukas/ros2_ws/install/teleop:/home/lukas/ros2_ws/install/realsense2_description:/home/lukas/ros2_ws/install/realsense2_camera:/home/lukas/ros2_ws/install/leo_gazebo_classic:/opt/ros/foxy: LD_LIBRARY_PATH=/home/lukas/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/home/lukas/ros2_ws/install/realsense2_camera/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/lukas/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake /home/lukas/ros2_ws/src/realsense-ros/realsense2_camera -DCMAKE_INSTALL_PREFIX=/home/lukas/ros2_ws/install/realsense2_camera
+[0.022s] -- Create Release Build.
+[0.022s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.038s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.175s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.181s] -- Found builtin_interfaces: 1.0.0 (/opt/ros/foxy/share/builtin_interfaces/cmake)
+[0.197s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.199s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.295s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.317s] -- Found cv_bridge: 3.0.7 (/opt/ros/foxy/share/cv_bridge/cmake)
+[0.462s] -- Found image_transport: 2.4.0 (/opt/ros/foxy/share/image_transport/cmake)
+[0.496s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.498s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.649s] -- Found rclcpp_components: 2.4.3 (/opt/ros/foxy/share/rclcpp_components/cmake)
+[0.691s] -- Found realsense2_camera_msgs: 3.1.4 (/home/lukas/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake)
+[0.724s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[0.787s] -- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)
+[1.057s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.122s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.123s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.124s] -- Configured cppcheck include dirs: /home/lukas/ros2_ws/src/realsense-ros/realsense2_camera/include
+[1.124s] -- Configured cppcheck exclude dirs and/or files: 
+[1.125s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.125s] -- Configured cpplint exclude dirs and/or files: 
+[1.125s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.125s] -- Added test 'lint_cmake' to check CMake code style
+[1.126s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.127s] -- Added test 'uncrustify' to check C / C++ code style
+[1.127s] -- Configured uncrustify additional arguments: 
+[1.127s] -- Added test 'xmllint' to check XML markup files
+[1.131s] -- Configuring done
+[1.159s] -- Generating done
+[1.174s] -- Build files have been written to: /home/lukas/ros2_ws/build/realsense2_camera
+[1.180s] Invoked command in '/home/lukas/ros2_ws/build/realsense2_camera' returned '0': CMAKE_PREFIX_PATH=/home/lukas/ros2_ws/install/realsense2_camera_msgs:/home/lukas/ros2_ws/install/teleop:/home/lukas/ros2_ws/install/realsense2_description:/home/lukas/ros2_ws/install/realsense2_camera:/home/lukas/ros2_ws/install/leo_gazebo_classic:/opt/ros/foxy: LD_LIBRARY_PATH=/home/lukas/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/home/lukas/ros2_ws/install/realsense2_camera/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/lukas/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake /home/lukas/ros2_ws/src/realsense-ros/realsense2_camera -DCMAKE_INSTALL_PREFIX=/home/lukas/ros2_ws/install/realsense2_camera
+[1.181s] Invoking command in '/home/lukas/ros2_ws/build/realsense2_camera': CMAKE_PREFIX_PATH=/home/lukas/ros2_ws/install/realsense2_camera_msgs:/home/lukas/ros2_ws/install/teleop:/home/lukas/ros2_ws/install/realsense2_description:/home/lukas/ros2_ws/install/realsense2_camera:/home/lukas/ros2_ws/install/leo_gazebo_classic:/opt/ros/foxy: LD_LIBRARY_PATH=/home/lukas/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/home/lukas/ros2_ws/install/realsense2_camera/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/lukas/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/lukas/ros2_ws/build/realsense2_camera -- -j12 -l12
+[1.216s] [35m[1mScanning dependencies of target realsense2_camera[0m
+[1.226s] [ 33%] Built target realsense2_camera_node
+[1.237s] [ 83%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o[0m
+[1.237s] [ 83%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/t265_realsense_node.cpp.o[0m
+[1.237s] [ 83%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o[0m
+[18.097s] [100%] [32m[1mLinking CXX shared library librealsense2_camera.so[0m
+[18.696s] [100%] Built target realsense2_camera
+[18.703s] Invoked command in '/home/lukas/ros2_ws/build/realsense2_camera' returned '0': CMAKE_PREFIX_PATH=/home/lukas/ros2_ws/install/realsense2_camera_msgs:/home/lukas/ros2_ws/install/teleop:/home/lukas/ros2_ws/install/realsense2_description:/home/lukas/ros2_ws/install/realsense2_camera:/home/lukas/ros2_ws/install/leo_gazebo_classic:/opt/ros/foxy: LD_LIBRARY_PATH=/home/lukas/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/home/lukas/ros2_ws/install/realsense2_camera/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/lukas/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/lukas/ros2_ws/build/realsense2_camera -- -j12 -l12
+[18.706s] Invoking command in '/home/lukas/ros2_ws/build/realsense2_camera': CMAKE_PREFIX_PATH=/home/lukas/ros2_ws/install/realsense2_camera_msgs:/home/lukas/ros2_ws/install/teleop:/home/lukas/ros2_ws/install/realsense2_description:/home/lukas/ros2_ws/install/realsense2_camera:/home/lukas/ros2_ws/install/leo_gazebo_classic:/opt/ros/foxy: LD_LIBRARY_PATH=/home/lukas/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/home/lukas/ros2_ws/install/realsense2_camera/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/lukas/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /home/lukas/ros2_ws/build/realsense2_camera
+[18.712s] -- Install configuration: "Release"
+[18.712s] -- Execute custom install script
+[18.712s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/realsense2_camera/lib/realsense2_camera/realsense2_camera_node
+[18.713s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/realsense2_camera/lib/librealsense2_camera.so
+[18.713s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/realsense2_camera/include/realsense2_camera/base_realsense_node.h
+[18.713s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/realsense2_camera/include/realsense2_camera/constants.h
+[18.713s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/realsense2_camera/include/realsense2_camera/realsense_node_factory.h
+[18.713s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/realsense2_camera/include/realsense2_camera/t265_realsense_node.h
+[18.714s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/default.rviz
+[18.714s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_d400_and_t265_launch.py
+[18.714s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_launch.py
+[18.714s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_multi_camera_launch.py
+[18.714s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/realsense2_camera/share/realsense2_camera/config/d435i.yaml
+[18.714s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/library_path.sh
+[18.715s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/library_path.dsv
+[18.715s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/realsense2_camera/share/ament_index/resource_index/package_run_dependencies/realsense2_camera
+[18.715s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/realsense2_camera/share/ament_index/resource_index/parent_prefix_path/realsense2_camera
+[18.715s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.sh
+[18.715s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.dsv
+[18.716s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/path.sh
+[18.716s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/path.dsv
+[18.716s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.bash
+[18.716s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.sh
+[18.716s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.zsh
+[18.716s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.dsv
+[18.717s] -- Symlinking: /home/lukas/ros2_ws/install/realsense2_camera/share/realsense2_camera/package.dsv
+[18.723s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/realsense2_camera/share/ament_index/resource_index/packages/realsense2_camera
+[18.724s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/realsense2_camera/share/ament_index/resource_index/rclcpp_components/realsense2_camera
+[18.724s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_include_directories-extras.cmake
+[18.724s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_libraries-extras.cmake
+[18.724s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_dependencies-extras.cmake
+[18.724s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig.cmake
+[18.724s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig-version.cmake
+[18.725s] -- Up-to-date symlink: /home/lukas/ros2_ws/install/realsense2_camera/share/realsense2_camera/package.xml
+[18.726s] Invoked command in '/home/lukas/ros2_ws/build/realsense2_camera' returned '0': CMAKE_PREFIX_PATH=/home/lukas/ros2_ws/install/realsense2_camera_msgs:/home/lukas/ros2_ws/install/teleop:/home/lukas/ros2_ws/install/realsense2_description:/home/lukas/ros2_ws/install/realsense2_camera:/home/lukas/ros2_ws/install/leo_gazebo_classic:/opt/ros/foxy: LD_LIBRARY_PATH=/home/lukas/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/home/lukas/ros2_ws/install/realsense2_camera/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/lukas/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /home/lukas/ros2_ws/build/realsense2_camera
