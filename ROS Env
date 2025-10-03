@@ -1,0 +1,63 @@
+ROS Environment:
+On laptop:
+	- ROS2 Foxy
+	- ROS1 bridge
+
+Created alias so sourcing is easy:
+Normal ROS2 work:
+	use_foxy
+
+
+If you need ROS1 tools:
+	use_noetic
+
+
+When running the bridge:
+	use_bridge_env
+	export ROS_MASTER_URI=http://leo.local:11311
+	export ROS_IP=192.168.50.51
+	ros2 run ros1_bridge dynamic_bridge
+	
+currently rover ip on robotlab wifi is: leo.local, or ip adress: 192.168.50.179
+laptops ip is currently: 192.168.50.51 
+
+Jetson need to have the same ros environment!!
+
+
+
+Gazebo Simulation
+- I have created the robot model with velodyne laser
+- 2 options, either launch the robot description and gazebo using this command in one terminal:
+	ros2 launch leo_gazebo_classic leo_gazebo_launch.py 
+  Or run gazebo launch sepereate (in order to launch different worlds) and then launch rsp.launch.py to get the robot description.
+  
+currently it seems like the laser isnt positioned correctly, or at least the pointscloud think the laser is at the floor, points are a bit off in z direction. 
+see claude conversation under master and ROS Gazebo Odom trouble. for summary
+
+- to spawn entity: ros2 run gazebo_ros spawn_entity.py -file /home/lukas/ros2_ws/src/leo_gazebo_classic/description/leo.xacro -entity leo
+- run converter from pointcloud2 to scan: 
+	ros2 run pointcloud_to_laserscan pointcloud_to_laserscan_node --ros-args -p min_height:=-0.1 -p max_height:=0.5 -p range_min:=0.25 -r cloud_in:=/velodyne_points -r scan:=/scan
+	
+
+
+
+
+==================================== Complete SLAM and Map ====================================
+
+- launch gazebo and robot description as well as spawn entity:
+	ros2 launch leo_gazebo_classic leo_gazebo_launch.py
+	ros2 run gazebo_ros spawn_entity.py -file /home/lukas/ros2_ws/src/leo_gazebo_classic/description/leo.xacro -entity leo
+	
+- run the pointcloud to laserscan converter:
+	ros2 run pointcloud_to_laserscan pointcloud_to_laserscan_node --ros-args -p min_height:=-0.1 -p max_height:=0.5 -p range_min:=0.25 -r cloud_in:=/velodyne_points -r scan:=/scan
+	
+- Start the SLAM and Mapper:
+	ros2 launch slam_toolbox online_async_launch.py params_file:=$HOME/ros2_ws/src/robot_utils/config/mapper_params_online_async.yaml use_sim_time:=true
+	
+- Open rviz2 with the saved setup:
+	rviz2 -d ~/ros2_ws/src/robot_utils/robot_utils/rviz_setup.rviz 
+
+- Run teleop to control robot and build map:
+	ros2 run teleop teleop 
+
+

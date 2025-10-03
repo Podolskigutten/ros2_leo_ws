@@ -44,7 +44,7 @@ int main(int argc, char **argv)
     // Simple controls (tweak if you like)
     double v = 0.0, w = 0.0;             // linear.x, angular.z
     const double dv = 0.1, dw = 0.10;    // step per keypress
-    const double vmax = 1.0, wmax = 1.0; // clamps
+    const double vmax = 1.0, wmax = 1.2; // clamps
     rclcpp::WallRate rate(10);           // publish at xx Hz
     //
     //

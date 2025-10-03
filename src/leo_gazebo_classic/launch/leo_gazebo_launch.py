@@ -5,9 +5,24 @@ from launch.substitutions import LaunchConfiguration
 from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.actions import Node
+from launch.actions import DeclareLaunchArgument
+from launch.substitutions import LaunchConfiguration, PythonExpression
 import xacro
 
 def generate_launch_description():
+    # Declare argument
+    empty_world_arg = DeclareLaunchArgument(
+        'empty_world',
+        default_value='false',
+        description='Use empty world instead of willowgarage'
+    )
+    empty_world_config = LaunchConfiguration('empty_world')
+    
+    # Conditional world path
+    world_path = PythonExpression([
+        "'' if '", empty_world_config, "' == 'true' else '/usr/share/gazebo-11/worlds/willowgarage.world'"
+    ])
+
     
     use_sim_time = LaunchConfiguration('use_sim_time')
     
@@ -25,11 +40,11 @@ def generate_launch_description():
         parameters=[params]
     )
     
-    # Include Gazebo launch
+    # Gazebo include
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([os.path.join(
             get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')]),
-        launch_arguments={'world': '/usr/share/gazebo-11/worlds/willowgarage.world'}.items()
+        launch_arguments={'world': world_path}.items()
     )
     
     return LaunchDescription([
@@ -38,6 +53,7 @@ def generate_launch_description():
             default_value='true',
             description='Use sim time if true'),
         
+        empty_world_arg,
         gazebo,
         node_robot_state_publisher,
     ])

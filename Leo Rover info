@@ -1,0 +1,21 @@
+- Leo rover on robotlab wifi:
+	run ip -a, look for wlan_int and look for IP adress.
+- I have set up ssh so i can just call ssh leo from this laptop (26.08.25). 
+
+- Leo Rover hardware and software specs:
+	- Raspberry pi 4 Model B Rev 1.5
+	- LeoOS version 1.2.0, stage4
+	- ROS1 Noetic
+	- leo_fw 2.4.0
+
+ROS_IP=10.0.0.1
+ROS_MASTER_URI=http://localhost:11311
+
+
+To control the rover using terminal:
+rostopic pub -r 10 /cmd_vel geometry_msgs/Twist '{linear: {x: 0.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}'
+
+
+Lidar env:
+- Lidar is conencted on ethernet with ip: 192.168.1.201
+- ros2 launch velodyne velodyne-all-nodes-VLP16-launch.py and observe in Rviz2
