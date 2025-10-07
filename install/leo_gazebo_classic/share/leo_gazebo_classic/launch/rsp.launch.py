@@ -1,1 +1,0 @@
-/home/lukas/ros2_ws/src/leo_gazebo_classic/launch/rsp.launch.py
