@@ -38,6 +38,20 @@ def generate_launch_description():
         output='screen',
         parameters=[params]
     )
+
+    # Spawn robot entity
+    spawn_entity = Node(
+        package='gazebo_ros',
+        executable='spawn_entity.py',
+        arguments=[
+            '-file', os.path.join(pkg_path, 'description', 'leo.xacro'),
+            '-entity', 'leo',
+            '-x', '0',
+            '-y', '0',
+            '-z', '0.5'
+        ],
+        output='screen'
+    )
     
     # Gazebo include
     gazebo = IncludeLaunchDescription(
@@ -55,4 +69,5 @@ def generate_launch_description():
         empty_world_arg,
         gazebo,
         node_robot_state_publisher,
+        spawn_entity,
     ])

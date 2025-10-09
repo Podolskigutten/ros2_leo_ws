@@ -6,6 +6,7 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration
 from launch.conditions import IfCondition
 from launch_ros.actions import Node
+from launch.actions import TimerAction
 
 def generate_launch_description():
     
@@ -29,10 +30,15 @@ def generate_launch_description():
             get_package_share_directory('leo_slam'), 'launch', 'slam_launch.py')])
     )
     
-    # Include Nav2
-    nav2_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource([os.path.join(
-            get_package_share_directory('leo_nav2'), 'launch', 'nav2_launch.py')])
+    # Include Nav2 (with delay to wait for robot spawn)
+    nav2_launch = TimerAction(
+        period=5.0,  # Wait 5 seconds
+        actions=[
+            IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([os.path.join(
+                    get_package_share_directory('leo_nav2'), 'launch', 'nav2_launch.py')])
+            )
+        ]
     )
     
     # Include Teleop
@@ -62,7 +68,7 @@ def generate_launch_description():
         use_converter_arg,
         gazebo_launch,
         slam_launch,
-        #nav2_launch,
+        nav2_launch,
         teleop_launch,
         converter_node,
     ])
