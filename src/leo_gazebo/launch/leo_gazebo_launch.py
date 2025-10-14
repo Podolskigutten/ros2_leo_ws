@@ -9,6 +9,11 @@ from launch.substitutions import LaunchConfiguration, PythonExpression
 import xacro
 
 def generate_launch_description():
+    # Process the URDF file
+    pkg_path = os.path.join(get_package_share_directory('leo_gazebo'))
+    xacro_file = os.path.join(pkg_path,'description','leo.xacro')
+    robot_description_config = xacro.process_file(xacro_file)
+
     # Declare argument
     empty_world_arg = DeclareLaunchArgument(
         'empty_world',
@@ -17,18 +22,15 @@ def generate_launch_description():
     )
     empty_world_config = LaunchConfiguration('empty_world')
     
-    # Conditional world path
     world_path = PythonExpression([
-        "'' if '", empty_world_config, "' == 'true' else '/usr/share/gazebo-11/worlds/willowgarage.world'"
+        "'", empty_world_config, "' == 'true' and '' or '",
+        os.path.join(pkg_path, 'worlds', 'house_test.world'), "'"
     ])
+
 
     
     use_sim_time = LaunchConfiguration('use_sim_time')
-    
-    # Process the URDF file
-    pkg_path = os.path.join(get_package_share_directory('leo_gazebo'))
-    xacro_file = os.path.join(pkg_path,'description','leo.xacro')
-    robot_description_config = xacro.process_file(xacro_file)
+
     
     # Robot state publisher
     params = {'robot_description': robot_description_config.toxml(), 'use_sim_time': use_sim_time}
