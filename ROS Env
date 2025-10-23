@@ -85,8 +85,12 @@ OPTION 2 - Individual Components (for debugging):
 
 NAV2 USAGE (once enabled):
 - In RViz, add Nav2 displays: Global/Local Costmaps, Global/Local Plans
-- Use "2D Goal Pose" button in RViz to set navigation goals
+- Use "2D Goal Pose" button in RViz to set navigation goals. Important: Set it to fixed frame = Map, or the navigation dosent work
 - Nav2 will autonomously navigate to the goal
+
+
+
+
 
 
 
