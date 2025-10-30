@@ -17,14 +17,14 @@
         <visual>
             <origin xyz="0.0 0.0 0.0895"/>
             <geometry>
-                <box size="0.295 0.354 0.092"/>
+                <box size="0.295 0.289 0.092"/>
             </geometry>
             <material name="red"/>
         </visual>
         <collision>  <!-- Add this -->
             <origin xyz="0.0 0.0 0.0895"/>
             <geometry>
-                <box size="0.295 0.354 0.092"/>
+                <box size="0.295 0.289 0.092"/>
             </geometry>
         </collision>
         <inertial>
@@ -138,13 +138,34 @@
         <dynamics damping="0.7" friction="1.0"/>
     </joint>
 
+    <!-- Jetson Mount -->
+    <link name="jetson_mount">
+        <visual>
+            <geometry>
+                <box size="0.110 0.123 0.053"/>
+            </geometry>
+            <material name="black"/>  <!-- or whatever color you want -->
+        </visual>
+        <collision>
+            <geometry>
+                <box size="0.110 0.123 0.053"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="jetson_mount_joint" type="fixed">
+        <parent link="chassis"/>
+        <child link="jetson_mount"/>
+        <origin xyz="0.05 0 0.162" rpy="0 0 0"/>
+    </joint>
+
     <!-- Lidar -->
     <link name="velodyne">
         <visual>
             <geometry>
                 <cylinder radius="0.0516" length="0.0717"/>
             </geometry>
-            <material name="black"/>
+            <material name="dark_blue"/>
         </visual>
         <collision>
             <geometry>
@@ -156,12 +177,16 @@
     <joint name="velodyne_joint" type="fixed">
         <parent link="chassis"/>
         <child link="velodyne"/>
-        <origin xyz="0 0 0.17135" rpy="0 0 0"/>
+        <origin xyz="0.05 0 0.22435" rpy="0 0 0"/>
     </joint>
 
 
     <material name="black">
     <color rgba="0.0 0.0 0.0 1.0"/>
+    </material>
+
+    <material name="dark_blue">
+    <color rgba="0.0 0.2 0.5 1.0"/>
     </material>
 
     <material name="red">
