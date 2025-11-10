@@ -88,9 +88,34 @@ NAV2 USAGE (once enabled):
 - Use "2D Goal Pose" button in RViz to set navigation goals. Important: Set it to fixed frame = Map, or the navigation dosent work
 - Nav2 will autonomously navigate to the goal
 
+============================= Complete SLAM and Navigation Stack on Real Rover =============================
 
+1. Start Velodyne on Jetson:
+   ros2 launch velodyne velodyne-all-nodes-VLP16-launch.py
 
+2. Start ROS1-ROS2 Bridge on Laptop:
+   use_bridge_env
+   ros2 run ros1_bridge parameter_bridge
+   
+   Note: Bridges only specified topics from bridge.yaml:
+   - /cmd_vel
+   - /firmware/battery_averaged
+   - /diagnostics
+   - /odometry_merged
 
+3. Start Teleoperation on Laptop:
+   ros2 launch leo_teleop controller_teleop.launch.py
+
+4. Visualization and Navigation:
+   - Launch RViz for visualization
+   - Run SLAM Toolbox for mapping
+   - Run Nav2 for autonomous navigation
+
+IMPORTANT NOTES:
+- Jetson WiFi power management must be disabled to prevent latency
+  Command: sudo iw dev wlan0 set power_save off
+- Ensure antenna connection is secure on Jetson Xavier NX
+- Bridge configuration loaded on Leo: rosparam load bridge.yaml
 
 
 
