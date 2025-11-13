@@ -30,10 +30,19 @@ def generate_launch_description():
         output='screen'
     )    
 
+    # Inclde scan_filter
+    ScanFilter = Node(
+        package='leo_utils',
+        executable='scan_filter.py',
+        name='scan_filter',
+        output='screen'
+    )
+
 
     return LaunchDescription([
         real_launch,
         teleop_launch,
-        odom2TF_node
+        odom2TF_node,
+        ScanFilter
 
     ])

@@ -20,7 +20,7 @@ class odom2TF(Node):
         t = TransformStamped()
         # Copy headers and posse to re-broadcast them
         t.header = msg.header
-        t.header.stamp = self.get_clock().now().to_msg()
+        t.header.stamp = msg.header.stamp #self.get_clock().now().to_msg()
         t.child_frame_id = msg.child_frame_id
         t.transform.translation.x = msg.pose.pose.position.x
         t.transform.translation.y = msg.pose.pose.position.y
